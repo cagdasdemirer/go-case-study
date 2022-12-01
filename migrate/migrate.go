@@ -21,4 +21,9 @@ func main() {
 	if err != nil {
 		return
 	}
+
+	// Populate the database with some data
+
+	// seed.Seed()
+
 }

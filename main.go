@@ -13,7 +13,7 @@ func init() {
 
 func main() {
 	r := gin.Default()
-	r.GET("/", controllers.PostCreate)
+	r.POST("/user", controllers.UserCreate)
 	err := r.Run()
 	if err != nil {
 		return

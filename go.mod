@@ -3,6 +3,7 @@ module go-case-study
 go 1.19
 
 require (
+	github.com/brianvoe/gofakeit/v6 v6.19.0 // indirect
 	github.com/fatih/color v1.9.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
