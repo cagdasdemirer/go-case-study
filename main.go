@@ -14,8 +14,13 @@ func init() {
 func main() {
 	r := gin.Default()
 	r.POST("/user", controllers.UserCreate)
+	r.POST("/device", controllers.DeviceCreate)
+	r.POST("/relation", controllers.RelationCreate)
+	r.DELETE("/relation/:id", controllers.RelationDelete)
+	r.GET("/sensor_data", controllers.SensorDataFetch)
+	r.GET("/device", controllers.DeviceFetch)
 	err := r.Run()
 	if err != nil {
 		return
-	} // listen and serve on 0.0.0.0:8080
+	}
 }

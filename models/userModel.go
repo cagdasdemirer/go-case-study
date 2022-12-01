@@ -10,5 +10,5 @@ type User struct {
 	Email    string   `json:"email"`
 	Phone    string   `json:"phone"`
 	Company  string   `json:"company" binding:"required"`
-	UserRole UserRole `gorm:"foreignKey:RoleID;constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
+	UserRole UserRole `json:"-" gorm:"foreignKey:RoleID;constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
 }

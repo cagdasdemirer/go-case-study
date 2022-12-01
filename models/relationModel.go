@@ -7,6 +7,6 @@ type Relation struct {
 	UserID        uint   `json:"userID"`
 	DeviceID      uint   `json:"deviceID"`
 	RelationNotes string `json:"relationNotes"`
-	User          User   `gorm:"foreignKey:UserID;constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
-	Device        Device `gorm:"foreignKey:DeviceID;constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
+	User          User   `json:"-" gorm:"foreignKey:UserID;constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
+	Device        Device `json:"-" gorm:"foreignKey:DeviceID;constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
 }
