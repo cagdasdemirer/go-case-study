@@ -1,6 +1,5 @@
 package middlewares
 
-import "C"
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
