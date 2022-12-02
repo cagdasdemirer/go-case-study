@@ -29,6 +29,7 @@ func CreateUsers() {
 			LastName: gofakeit.LastName(),
 			RoleID:   uint(rand.Intn(4-1) + 1),
 			Email:    gofakeit.Email(),
+			Password: gofakeit.Password(true, true, true, true, true, 10),
 			Company:  gofakeit.Company()})
 	}
 	result := initializers.DB.Create(&users)
