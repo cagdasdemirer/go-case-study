@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-case-study/initializers"
-	"go-case-study/models"
+	"go-case-study/pkg/initializers"
+	"go-case-study/pkg/models"
 	"net/http"
 )
 

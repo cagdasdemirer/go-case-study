@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-case-study/controllers"
-	"go-case-study/initializers"
+	"go-case-study/pkg/controllers"
+	"go-case-study/pkg/initializers"
 )
 
 func init() {
